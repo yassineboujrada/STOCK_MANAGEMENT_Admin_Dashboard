@@ -11,7 +11,6 @@ import ModifierProducts from './components/Products/ModifierProducts';
 import StockOperations from './components/stock/stockoperation';
 import MainLogin from './components/Login/MainLogin';
 import AddStock from './components/stock/addStock';
-import HomePage from './components/Home/home';
 import BasicDocument from "./components/Orders/BasicDocument";
 import Mainsign from './components/SignIn/Mainsign';
 import PrivateRoutes from './components/PrivateRoutes';
@@ -20,17 +19,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-          {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
-          {/* <Route element={<Root />}> */}
-          {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
-      <Route element={<PrivateRoutes />}>
-          <Route path="/admin" element={<Root />}>
+        <Route element={<PrivateRoutes />}>
+            <Route path="/admin" element={<Root />}>
               <Route path="Dashboard" element={<Dashboard />} />
               <Route path="customers" element={<Customers />} />
               <Route path="orders" element={<Orders />} />
               <Route path='orders/detail' element={<DetailOrder />} />
               <Route path="orders/bill" element={<BasicDocument />} />
-              {/* <Route path="orders/bill" element={<BasicDocument />} /> */}
               <Route path="products" element={<Products />} />
               <Route path="products/add" element={<AddProducts />} />
               <Route path="products/modifier/:id" element={<ModifierProducts />} />
@@ -38,12 +33,11 @@ function App() {
               <Route path="stock" element={<StockOperations />} />
               <Route path="stock/add" element={<AddStock />} />
           </Route>
-      </Route>
-              <Route path='/' element={<HomePage />} />
-              <Route path="/login" element={<MainLogin />} />
-              <Route path="/SignIn" element={<Mainsign />} />
-              <Route path="*" element={<h1>mmmmm</h1>} />
-        </Routes>
+        </Route>
+        <Route path="/login" element={<MainLogin />} />
+        <Route path="/SignIn" element={<Mainsign />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+      </Routes>
     </BrowserRouter>
   );
 }
