@@ -29,13 +29,13 @@ This repository contains a Stock Management Admin Dashboard built using React fo
 1- Clone the project repository to your local machine:
 
 ```sh
-$ git clone https://github.com/yassineboujrada/STOCK_MANAGEMENT_SPRING.git
+$ git clone https://github.com/yassineboujrada/STOCK_MANAGEMENT_Admin_Dashboard.git
 ```
 
 2- Navigate to the project directory:
 
 ```sh
-$ cd STOCK_MANAGEMENT_SPRING
+$ cd STOCK_MANAGEMENT_Admin_Dashboard
 ```
 
 3- Run the backend server:
