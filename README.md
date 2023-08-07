@@ -88,14 +88,13 @@ $ git push origin your-feature-name
 
 5- Open a pull request on the main repository, explaining your changes and their purpose.
 
-## License :
-
-This project is licensed under the MIT License.
-
 ## Acknowledgments :
 
 React - JavaScript library for building user interfaces.
+
 Spring Boot - Framework for building Java applications.
+
 Oracle Cloud - Cloud computing platform for hosting and managing applications.
+
 
 Feel free to modify this README to suit your project needs. Happy coding 😊!
